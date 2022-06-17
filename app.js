@@ -22,7 +22,7 @@ function Gallery(element) {
   // let self = this;
   // bind functions
   // this.openModal = this.openModal.bind(this);
-  this.closeModal = this.closeModal.bind(this);
+//   this.closeModal = this.closeModal.bind(this);
   this.nextImage = this.nextImage.bind(this);
   this.prevImage = this.prevImage.bind(this);
   this.chooseImage = this.chooseImage.bind(this);
