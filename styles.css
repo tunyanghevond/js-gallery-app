@@ -137,11 +137,11 @@ p {
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
-  gap: 2rem;
+   gap: 2rem;
+ 
 }
 @media screen and (min-width: 768px) {
   .section {
-    /* display: grid; */
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -159,7 +159,6 @@ p {
 }
 .img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: var(--radius);
   cursor: pointer;
@@ -194,6 +193,7 @@ Modal
   opacity: 1;
   z-index: 999;
 }
+
 .close-btn {
   position: absolute;
   top: 1rem;
@@ -203,6 +203,13 @@ Modal
   background: transparent;
   border-color: transparent;
   cursor: pointer;
+}
+.modal-content {
+  width: 80%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-top: 10rem;
+  position: relative;
 }
 .next-btn,
 .prev-btn {
@@ -215,12 +222,12 @@ Modal
   border-color: transparent;
   cursor: pointer;
 }
-.prev-btn {
+ .prev-btn {
   left: -2.5rem;
 }
 .next-btn {
   right: -2.5rem;
-}
+} 
 @media screen and (min-width: 768px) {
   .prev-btn {
     left: -4rem;
@@ -230,13 +237,7 @@ Modal
   }
 }
 
-.modal-content {
-  width: 80%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  margin-top: 10rem;
-  position: relative;
-}
+
 .main-img {
   width: 100%;
   height: 20rem;
